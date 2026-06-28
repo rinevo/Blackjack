@@ -91,7 +91,7 @@ function renderDealerHand() {
     const img = document.createElement('img');
     img.className = 'card-image';
     if (dealerHidden && index === 1) {
-      img.src = 'cards/back_red.svg';
+      img.src = 'cards/back_black.svg';
       img.alt = '裏面';
     } else {
       img.src = card.image;
