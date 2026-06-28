@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ブラックジャック - rinevo.com</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-link">
+      <a href="https://rinevo.com" target="_self" rel="noopener noreferrer">rinevo.com</a>
+    </div>
+    <h1>ブラックジャック</h1>
+    <p class="subtitle">ブラウザ上で遊べるシンプルなブラックジャックゲームです。</p>
+
+    <div class="controls">
+      <button id="newGameBtn">新しいゲーム</button>
+      <button id="hitBtn" disabled>ヒット</button>
+      <button id="standBtn" disabled>スタンド</button>
+    </div>
+
+    <div id="message" class="status">新しいゲームを始めてください。</div>
+
+    <div class="scoreboard">
+      <div class="score-badge">
+        <span class="score-label">プレイヤー勝ち</span>
+        <span id="playerWins" class="score-value">0</span>
+      </div>
+      <div class="score-badge">
+        <span class="score-label">ディーラー勝ち</span>
+        <span id="dealerWins" class="score-value">0</span>
+      </div>
+      <div class="score-badge">
+        <span class="score-label">引き分け</span>
+        <span id="ties" class="score-value">0</span>
+      </div>
+      <div class="score-badge">
+        <span class="score-label">ゲーム数</span>
+        <span id="gamesPlayed" class="score-value">0</span>
+      </div>
+    </div>
+
+    <section class="panel">
+      <h2>ディーラー</h2>
+      <div id="dealerHand" class="hand"></div>
+      <div id="dealerScore" class="score">-</div>
+    </section>
+
+    <section class="panel">
+      <h2>プレイヤー</h2>
+      <div id="playerHand" class="hand"></div>
+      <div id="playerScore" class="score">-</div>
+    </section>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
