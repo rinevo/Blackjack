@@ -143,11 +143,7 @@ function hit() {
   renderHands();
 
   if (calculateHandValue(playerHand) > 21) {
-    dealerHidden = false;
-    renderHands();
-    gameActive = false;
-    messageEl.textContent = 'バーストしました。ディーラーの勝ちです。';
-    updateButtons();
+    finishRound();
   }
 }
 
